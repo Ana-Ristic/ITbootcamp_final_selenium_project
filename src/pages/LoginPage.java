@@ -14,10 +14,10 @@ public class LoginPage {
 		this.driver = driver;
 		this.wait = wait;
 	}
-	public WebElement getEmail() {
+	public WebElement getEmailInput() {
 		return driver.findElement(By.id("email"));
 	}
-	public WebElement getPassword() {
+	public WebElement getPasswordInput() {
 		return driver.findElement(By.id("password"));
 	}
 	public WebElement getLoginButton() {
