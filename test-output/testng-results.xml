@@ -2,68 +2,68 @@
 <testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-10-10T15:08:30 CEST" name="Default suite" finished-at="2022-10-10T15:08:39 CEST" duration-ms="9623">
+  <suite started-at="2022-10-10T21:47:47 CEST" name="Default suite" finished-at="2022-10-10T21:47:54 CEST" duration-ms="6724">
     <groups>
     </groups>
-    <test started-at="2022-10-10T15:08:30 CEST" name="Default test" finished-at="2022-10-10T15:08:39 CEST" duration-ms="9623">
-      <class name="tests.SignupTests">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:tests.SignupTests@62150f9e]" started-at="2022-10-10T15:08:30 CEST" name="beforeClass" finished-at="2022-10-10T15:08:32 CEST" duration-ms="2536" status="PASS">
+    <test started-at="2022-10-10T21:47:47 CEST" name="Default test" finished-at="2022-10-10T21:47:54 CEST" duration-ms="6724">
+      <class name="tests.AuthRoutesTests">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:tests.AuthRoutesTests@62150f9e]" started-at="2022-10-10T21:47:47 CEST" name="beforeClass" finished-at="2022-10-10T21:47:49 CEST" duration-ms="1976" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:tests.SignupTests@62150f9e]" started-at="2022-10-10T15:08:32 CEST" name="beforeMethod" finished-at="2022-10-10T15:08:34 CEST" duration-ms="1364" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:tests.AuthRoutesTests@62150f9e]" started-at="2022-10-10T21:47:49 CEST" name="beforeMethod" finished-at="2022-10-10T21:47:51 CEST" duration-ms="1299" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="ChecksInputTypes()[pri:0, instance:tests.SignupTests@62150f9e]" started-at="2022-10-10T15:08:34 CEST" name="ChecksInputTypes" finished-at="2022-10-10T15:08:34 CEST" duration-ms="570" status="PASS">
+        <test-method signature="ForbidsVisitsToAdminCitiesUrlIfNotAuthenticated()[pri:0, instance:tests.AuthRoutesTests@62150f9e]" started-at="2022-10-10T21:47:51 CEST" name="ForbidsVisitsToAdminCitiesUrlIfNotAuthenticated" finished-at="2022-10-10T21:47:51 CEST" duration-ms="561" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ChecksInputTypes -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.SignupTests@62150f9e]" started-at="2022-10-10T15:08:34 CEST" name="afterMethod" finished-at="2022-10-10T15:08:34 CEST" duration-ms="0" status="PASS">
+        </test-method> <!-- ForbidsVisitsToAdminCitiesUrlIfNotAuthenticated -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.AuthRoutesTests@62150f9e]" started-at="2022-10-10T21:47:51 CEST" name="afterMethod" finished-at="2022-10-10T21:47:51 CEST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:tests.SignupTests@62150f9e]" started-at="2022-10-10T15:08:34 CEST" name="beforeMethod" finished-at="2022-10-10T15:08:35 CEST" duration-ms="480" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:tests.AuthRoutesTests@62150f9e]" started-at="2022-10-10T21:47:51 CEST" name="beforeMethod" finished-at="2022-10-10T21:47:52 CEST" duration-ms="368" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="DisplaysErrorsWhenUserAlreadyExists()[pri:0, instance:tests.SignupTests@62150f9e]" started-at="2022-10-10T15:08:35 CEST" name="DisplaysErrorsWhenUserAlreadyExists" finished-at="2022-10-10T15:08:36 CEST" duration-ms="1805" status="PASS">
+        <test-method signature="ForbidsVisitsToAdminUsersUrlIfNotAuthenticated()[pri:0, instance:tests.AuthRoutesTests@62150f9e]" started-at="2022-10-10T21:47:52 CEST" name="ForbidsVisitsToAdminUsersUrlIfNotAuthenticated" finished-at="2022-10-10T21:47:52 CEST" duration-ms="457" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- DisplaysErrorsWhenUserAlreadyExists -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.SignupTests@62150f9e]" started-at="2022-10-10T15:08:36 CEST" name="afterMethod" finished-at="2022-10-10T15:08:36 CEST" duration-ms="1" status="PASS">
+        </test-method> <!-- ForbidsVisitsToAdminUsersUrlIfNotAuthenticated -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.AuthRoutesTests@62150f9e]" started-at="2022-10-10T21:47:52 CEST" name="afterMethod" finished-at="2022-10-10T21:47:52 CEST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:tests.SignupTests@62150f9e]" started-at="2022-10-10T15:08:36 CEST" name="beforeMethod" finished-at="2022-10-10T15:08:37 CEST" duration-ms="361" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:tests.AuthRoutesTests@62150f9e]" started-at="2022-10-10T21:47:52 CEST" name="beforeMethod" finished-at="2022-10-10T21:47:52 CEST" duration-ms="381" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="Signup()[pri:0, instance:tests.SignupTests@62150f9e]" started-at="2022-10-10T15:08:37 CEST" name="Signup" finished-at="2022-10-10T15:08:39 CEST" duration-ms="1663" status="PASS">
+        <test-method signature="ForbidsVisitsToHomeUrlIfNotAuthenticated()[pri:0, instance:tests.AuthRoutesTests@62150f9e]" started-at="2022-10-10T21:47:52 CEST" name="ForbidsVisitsToHomeUrlIfNotAuthenticated" finished-at="2022-10-10T21:47:53 CEST" duration-ms="537" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Signup -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.SignupTests@62150f9e]" started-at="2022-10-10T15:08:39 CEST" name="afterMethod" finished-at="2022-10-10T15:08:39 CEST" duration-ms="1" status="PASS">
+        </test-method> <!-- ForbidsVisitsToHomeUrlIfNotAuthenticated -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.AuthRoutesTests@62150f9e]" started-at="2022-10-10T21:47:53 CEST" name="afterMethod" finished-at="2022-10-10T21:47:53 CEST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:tests.SignupTests@62150f9e]" started-at="2022-10-10T15:08:39 CEST" name="beforeMethod" finished-at="2022-10-10T15:08:39 CEST" duration-ms="426" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:tests.AuthRoutesTests@62150f9e]" started-at="2022-10-10T21:47:53 CEST" name="beforeMethod" finished-at="2022-10-10T21:47:53 CEST" duration-ms="360" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="VisitTheSignupPage()[pri:0, instance:tests.SignupTests@62150f9e]" started-at="2022-10-10T15:08:39 CEST" name="VisitTheSignupPage" finished-at="2022-10-10T15:08:39 CEST" duration-ms="109" status="PASS">
+        <test-method signature="ForbidsVisitsToProfileUrlIfNotAuthenticated()[pri:0, instance:tests.AuthRoutesTests@62150f9e]" started-at="2022-10-10T21:47:53 CEST" name="ForbidsVisitsToProfileUrlIfNotAuthenticated" finished-at="2022-10-10T21:47:54 CEST" duration-ms="481" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- VisitTheSignupPage -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.SignupTests@62150f9e]" started-at="2022-10-10T15:08:39 CEST" name="afterMethod" finished-at="2022-10-10T15:08:39 CEST" duration-ms="1" status="PASS">
+        </test-method> <!-- ForbidsVisitsToProfileUrlIfNotAuthenticated -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.AuthRoutesTests@62150f9e]" started-at="2022-10-10T21:47:54 CEST" name="afterMethod" finished-at="2022-10-10T21:47:54 CEST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:tests.SignupTests@62150f9e]" started-at="2022-10-10T15:08:39 CEST" name="afterClass" finished-at="2022-10-10T15:08:39 CEST" duration-ms="242" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:tests.AuthRoutesTests@62150f9e]" started-at="2022-10-10T21:47:54 CEST" name="afterClass" finished-at="2022-10-10T21:47:54 CEST" duration-ms="242" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- tests.SignupTests -->
+      </class> <!-- tests.AuthRoutesTests -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
