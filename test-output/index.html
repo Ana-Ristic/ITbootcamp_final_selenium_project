@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\anupp\AppData\Local\Temp\testng-eclipse--1439268075\testng-customsuite.xml</span>
+                    <span>C:\Users\anupp\AppData\Local\Temp\testng-eclipse--1350438017\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -104,7 +104,7 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="tests.AdminCitiesTests" class="method navigator-link" hash-for-method="CreateNewCity">CreateNewCity</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="tests.AdminCitiesTests" class="method navigator-link" hash-for-method="SearchCity">SearchCity</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -127,19 +127,16 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="CreateNewCity">
-                  </a> <!-- CreateNewCity -->
-                  <span class="method-name">CreateNewCity</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of all elements located by By.xpath: //*[contains(text(), &apos;Saved successfully&apos;)] (tried for 40 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
-System info: host: &apos;LAPTOP-5L00RV6H&apos;, ip: &apos;192.168.2.198&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.103, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\anupp\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58263}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58263/devtoo..., se:cdpVersion: 106.0.5249.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: ebb21b82589ed2638d86269e8641b10e
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at pages.CitiesPage.waitForMessageDialogToBeVisible(CitiesPage.java:31)
-	at tests.AdminCitiesTests.CreateNewCity(AdminCitiesTests.java:39)
+                  <a name="SearchCity">
+                  </a> <!-- SearchCity -->
+                  <span class="method-name">SearchCity</span>
+                  <div class="stack-trace">java.lang.AssertionError: ERROR expected [Barranquilla] but found [BarranquillaNovi Sad]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at tests.AdminCitiesTests.SearchCity(AdminCitiesTests.java:74)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -175,7 +172,7 @@ Session ID: ebb21b82589ed2638d86269e8641b10e
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\anupp\AppData\Local\Temp\testng-eclipse--1439268075\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\anupp\AppData\Local\Temp\testng-eclipse--1350438017\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -226,14 +223,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'CreateNewCity')
+data.setCell(0, 1, 'SearchCity')
 data.setCell(0, 2, 'tests.AdminCitiesTests')
-data.setCell(0, 3, 42767);
+data.setCell(0, 3, 7034);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 42 seconds</span>
+              <span class="suite-total-time">Total running time: 7 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -266,21 +263,21 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">2237 ms</span>
+                <span class="method-start">2623 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">CreateNewCity</span>
-                <span class="method-start">3457 ms</span>
+                <span class="method-name">SearchCity</span>
+                <span class="method-start">4109 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">46241 ms</span>
+                <span class="method-start">11149 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">46246 ms</span>
+                <span class="method-start">11151 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

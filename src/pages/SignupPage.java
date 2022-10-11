@@ -14,19 +14,19 @@ public class SignupPage {
 		this.wait = wait;
 	}
 	public WebElement getNameInput() {
-		return driver.findElement(By.xpath("//*[@name = 'name']"));
+		return driver.findElement(By.id("name"));
 	}
 
 	public WebElement getEmailInput() {
-		return driver.findElement(By.xpath("//*[@name = 'email']"));
+		return driver.findElement(By.id("email"));
 	}
 	
 	public WebElement getPasswordInput() {
-		return driver.findElement(By.xpath("//*[@name = 'password']"));
+		return driver.findElement(By.id("password"));
 	}
 	
 	public WebElement getConfirmPasswordInput() {
-		return driver.findElement(By.xpath("//*[@name = 'confirmPassword']"));
+		return driver.findElement(By.id("confirmPassword"));
 	}
 	
 	public WebElement getSignMeUpButton() {

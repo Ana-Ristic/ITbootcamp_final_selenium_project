@@ -6,7 +6,7 @@
       <class name="tests.AdminCitiesTests">
         <methods>
           <include name="beforeMethod"/>
-          <include name="CreateNewCity"/>
+          <include name="SearchCity"/>
           <include name="beforeClass"/>
           <include name="afterMethod"/>
           <include name="afterClass"/>
