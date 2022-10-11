@@ -57,5 +57,4 @@ public class BasicTest {
     public void afterClass() {
         driver.quit();
     }
-
 }

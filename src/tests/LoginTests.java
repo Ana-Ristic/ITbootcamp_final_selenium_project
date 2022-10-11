@@ -61,6 +61,4 @@ public class LoginTests extends BasicTest{
 		Assert.assertTrue(isLogoutButtonVisible, "ERROR: Logout button is not visible");
 		navPage.getLogoutButton().click();
 	}
-	
-	
 }

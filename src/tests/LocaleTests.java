@@ -36,5 +36,4 @@ public class LocaleTests extends BasicTest{
 			Assert.assertEquals(navPage.getHeader().getText(), "首页",
 					"ERROR: Incorrect Title.");
 		}
-
 }

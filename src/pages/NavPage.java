@@ -59,7 +59,4 @@ public class NavPage {
 	public WebElement getHeader() {
 		return driver.findElement(By.tagName("h1"));
 	}
-	
-	
-
 }

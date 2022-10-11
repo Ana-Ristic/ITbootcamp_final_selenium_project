@@ -28,5 +28,4 @@ public class AuthRoutesTests extends BasicTest{
 		driver.get(baseUrl + "/admin/users");
 		Assert.assertEquals(driver.getCurrentUrl(), baseUrl + "/login", "ERROR: Incorrect URL.");
 	}
-
 }

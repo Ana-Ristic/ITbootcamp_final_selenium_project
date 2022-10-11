@@ -15,7 +15,6 @@ public class SignupTests extends BasicTest{
 		Assert.assertEquals(signupPage.getEmailInput().getAttribute("type"),"email", "ERROR: Incorrect atribut.");
 		Assert.assertEquals(signupPage.getPasswordInput().getAttribute("type"),"password", "ERROR: Incorrect atribut.");
 		Assert.assertEquals(signupPage.getConfirmPasswordInput().getAttribute("type"),"password", "ERROR: Incorrect atribut.");
-		
 	}
 	@Test
 	public void DisplaysErrorsWhenUserAlreadyExists(){
@@ -29,8 +28,7 @@ public class SignupTests extends BasicTest{
 		messagePopUpPage.waitForPopUpToBeVisible();
 		Assert.assertEquals(messagePopUpPage.getTextFromPopUpDialog().getText(), "E-mail already exists", "ERROR: Incorrect message.");
 		Assert.assertEquals(driver.getCurrentUrl(), baseUrl + "/signup", "ERROR: Incorrect URL.");
-		
-    }
+	}
 	@Test
 	public void Signup(){
 		navPage.getSignupButton().click();
@@ -44,5 +42,4 @@ public class SignupTests extends BasicTest{
 		messagePopUpPage.getVerifyAccountCloseButton().click();
 		navPage.getLogoutButton().click();
    }
-	
 }

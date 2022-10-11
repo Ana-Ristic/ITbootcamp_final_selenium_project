@@ -14,11 +14,11 @@ public class CitiesPage {
 		this.driver = driver;
 		this.wait = wait;
 	}
-	public WebElement getNewItemInput() {
-		return driver.findElement(By.id("name"));
-	}
 	public WebElement getNewItemButton() {
 		return driver.findElement(By.className("btnNewItem"));
+	}
+	public WebElement getNewItemInput() {
+		return driver.findElement(By.id("name"));
 	}
 	public WebElement getSearchInput() {
 		return driver.findElement(By.id("search"));
@@ -59,9 +59,5 @@ public class CitiesPage {
 	public WebElement getDeleteButtonFromRow(int rowNumber) {
 		return driver.findElement(By.xpath("//tbody/tr["+ rowNumber + "]//div/button[2]"));
 	}
-	
-	
-	
-	
 
 }

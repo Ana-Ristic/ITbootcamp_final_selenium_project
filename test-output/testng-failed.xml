@@ -3,18 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.AuthRoutesTests">
+      <class name="tests.AdminCitiesTests">
         <methods>
           <include name="beforeMethod"/>
-          <include name="ForbidsVisitsToAdminUsersUrlIfNotAuthenticated"/>
-          <include name="ForbidsVisitsToProfileUrlIfNotAuthenticated"/>
+          <include name="CreateNewCity"/>
           <include name="beforeClass"/>
-          <include name="ForbidsVisitsToAdminCitiesUrlIfNotAuthenticated"/>
           <include name="afterMethod"/>
-          <include name="ForbidsVisitsToHomeUrlIfNotAuthenticated"/>
           <include name="afterClass"/>
         </methods>
-      </class> <!-- tests.AuthRoutesTests -->
+      </class> <!-- tests.AdminCitiesTests -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

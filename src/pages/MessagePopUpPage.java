@@ -38,7 +38,5 @@ public class MessagePopUpPage {
 	}
 	public WebElement getVerifyAccountCloseButton() {
 		return driver.findElement(By.className("btnClose"));
-	}
-	
-	
+	}	
 }
