@@ -6,72 +6,75 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class AdminCitiesTests extends BasicTest{
-//	@Test
-//	public void VisitsTheAdminCitiesPageAndListCities() throws InterruptedException {
-//		navPage.getLoginButton().click();
-//		loginPage.getEmailInput().sendKeys("admin@admin.com");
-//		loginPage.getPasswordInput().sendKeys("12345");
-//		loginPage.getLoginButton().click();
-//		navPage.getAdminButton().click();
-//		navPage.getCitiesLink().click();
-//		Assert.assertEquals(driver.getCurrentUrl(), baseUrl + "/admin/cities", "ERROR: Incorrect URL.");
-//		Thread.sleep(5000);
-//	}
-	
-//	@Test
-//	public void ChecksInputTypesForCreateEditNewCity() throws InterruptedException {
-//		wait.until(ExpectedConditions.elementToBeClickable(By.className("btnNewItem")));
-//		navPage.getAdminButton().click();
-//		navPage.getCitiesLink().click();
-//		citiesPage.getNewItemButton().click();
-//		citiesPage.waitForEditDialogtoBeVisible();
-//		Assert.assertEquals(citiesPage.getNewItemInput().getAttribute("type"),"text", "ERROR: Incorrect atribut.");
-//	}
-	
-//	@Test
-//	public void CreateNewCity() {
-//		navPage.getLoginButton().click();
-//		loginPage.getEmailInput().sendKeys("admin@admin.com");
-//		loginPage.getPasswordInput().sendKeys("12345");
-//		loginPage.getLoginButton().click();
-//		navPage.getAdminButton().click();
-//		navPage.getCitiesLink().click();
-//		citiesPage.getNewItemButton().click();
-//		citiesPage.getNewItemInput().sendKeys("Bor");
-//		citiesPage.getSaveButtonFromDialog().click();
-//		citiesPage.waitForMessageDialogToBeVisible();
-//		Assert.assertTrue(citiesPage.getMessageDialogText().getText().contains("Saved successfully"), "ERROR: Incorrect message.");
-//	} 
-	
-//	@Test
-//	public void EditCity() {
-//		navPage.getLoginButton().click();
-//		loginPage.getEmailInput().sendKeys("admin@admin.com");
-//		loginPage.getPasswordInput().sendKeys("12345");
-//		loginPage.getLoginButton().click();
-//		navPage.getAdminButton().click();
-//		navPage.getCitiesLink().click();
-//		citiesPage.getSearchInput().sendKeys("Barranquilla");
-//		citiesPage.waitForNumberOfRows(1);
-//		citiesPage.getEditButton(1).click();
-//		citiesPage.getNewItemInput().sendKeys("Novi Sad");
-//		citiesPage.getSaveButtonFromDialog().click();
-//		Assert.assertTrue(citiesPage.getMessageDialogText().getText().contains("Saved successfully"), "ERROR: Incorrect message.");
-//		Assert.assertEquals(citiesPage.getTableCell(1, 2).getText(), "Bor", "ERROR");
-//	}
-	
 	@Test
-	public void SearchCity() throws InterruptedException {
+	public void VisitsTheAdminCitiesPageAndListCities(){
 		navPage.getLoginButton().click();
 		loginPage.getEmailInput().sendKeys("admin@admin.com");
 		loginPage.getPasswordInput().sendKeys("12345");
 		loginPage.getLoginButton().click();
 		navPage.getAdminButton().click();
 		navPage.getCitiesLink().click();
-		citiesPage.getSearchInput().sendKeys("Novi Sad");
+		Assert.assertEquals(driver.getCurrentUrl(), baseUrl + "/admin/cities", "ERROR: Incorrect URL.");
+	}
+	
+	@Test
+	public void ChecksInputTypesForCreateEditNewCity(){
+		navPage.getAdminButton().click();
+		navPage.getCitiesLink().click();
+		citiesPage.getNewItemButton().click();
+		citiesPage.waitForEditDialogtoBeVisible();
+		Assert.assertEquals(citiesPage.getNewItemInput().getAttribute("type"),"text", "ERROR: Incorrect attribut value.");
+	}
+	
+	@Test
+	public void CreateNewCity() {
+		navPage.getAdminButton().click();
+		navPage.getCitiesLink().click();
+		citiesPage.getNewItemButton().click();
+		citiesPage.getNewItemInput().sendKeys("Sam's Town");
+		citiesPage.getSaveButtonFromDialog().click();
+		citiesPage.waitForMessageDialogToBeVisible();
+		Assert.assertTrue(citiesPage.getMessageDialogText().getText().contains(
+				"Saved successfully"), "ERROR: Incorrect message.");
+	} 
+	
+	@Test
+	public void EditCity() {
+		navPage.getAdminButton().click();
+		navPage.getCitiesLink().click();
+		citiesPage.getSearchInput().sendKeys("Tom's Town");
 		citiesPage.waitForNumberOfRows(1);
-		Thread.sleep(5000);
-		Assert.assertEquals(citiesPage.getTableCell(1, 2).getText(), "Barranquilla", "ERROR");
+		citiesPage.getEditButton(1).click();
+		citiesPage.getNewItemInput().sendKeys("Sam's Town");
+		citiesPage.getSaveButtonFromDialog().click();
+		Assert.assertTrue(citiesPage.getMessageDialogText().getText().contains(
+				"Saved successfully"), "ERROR: Incorrect message.");
+	}
+	
+	@Test
+	public void SearchCity(){
+		navPage.getAdminButton().click();
+		navPage.getCitiesLink().click();
+		citiesPage.getSearchInput().sendKeys("Sam's Town");
+		citiesPage.waitForNumberOfRows(1);
+		Assert.assertEquals(citiesPage.getTableCell(1, 2).getText(), "Sam's Town", "ERROR: Incorrect City Name.");
+	}
+	
+	@Test
+	public void DeleteCity(){
+		navPage.getAdminButton().click();
+		navPage.getCitiesLink().click();
+		citiesPage.getSearchInput().sendKeys("Sam's Town");
+		citiesPage.waitForNumberOfRows(1);
+		Assert.assertEquals(citiesPage.getTableCell(1, 2).getText(), "Sam's Town", "ERROR: Incorrect City Name.");
+		citiesPage.getDeleteButtonFromRow(1).click();
+		citiesPage.waitForDeletePopUp();
+		citiesPage.getDeleteButtonFromDialog().click();
+		citiesPage.waitForMessageDialogToBeVisible();
+		Assert.assertTrue(citiesPage.getMessageDialogText().getText().contains(
+				"Deleted successfully"), "ERROR: Incorrect message.");
+		
+		
 	}
 	
 }
