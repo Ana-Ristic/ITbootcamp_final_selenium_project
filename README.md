@@ -1,2 +1,1 @@
-# itbootcamp_final_selenium_project
 # ITbootcamp_final_selenium_project
